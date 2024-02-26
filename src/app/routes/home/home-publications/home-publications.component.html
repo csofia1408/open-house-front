@@ -19,7 +19,7 @@
         
       <div>
  <mat-card-actions>
-        <button mat-button id="1" >Mensaje</button>
+        <button mat-button id="1" (click)="addComment(post.id, i)" >Mensaje</button>
       </mat-card-actions>
       <div class="comments-section">
         <h3>Comentarios ({{post.commentPeople.length}})</h3>
